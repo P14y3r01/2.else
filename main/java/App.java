@@ -20,7 +20,10 @@ public class App {
 
         Cat one = applicationContext.getBean(Cat.class);
         Cat two = applicationContext.getBean(Cat.class);
-
+        
+        //как я понял, все работает как и должно
+        System.out.println(one.equals(two));
+        two.setName("garfield");
         System.out.println(one.equals(two));
 
 
